@@ -1,0 +1,172 @@
+/**A FONTE NÃO ESTÁ MUDANDO OBS: FAZER ESSA ALTERAÇÃO*/
+body{
+    /*COR DO CORPO DO SITE*/
+    background-color: rgb(34, 34, 34);
+    font-family: poppinsregular;
+    color: white;  /*COR DE TODAS AS FONTES*/
+    max-width: 1200px; /*ELEMENTOS JUNTOS E ESTATICOS AO DAR ZOOM*/
+    margin: 0 auto;/*SITE NO CENTRO DA TELA AO DAR ZOOM*/
+    padding: 15px; /*aumenta a área interna do elemento, empurrando o conteúdo para longe das bordas.*/
+}
+
+header {
+    display: flex; /*POSICIONAR OS ELEMENTOS NA TELA*/
+    flex-direction: row; /*DIREÇÃO DA DIV EM LINHA*/
+    justify-content: space-between; /*CRIAR UM ESPAÇO ENTRE AS DIVS*/
+    align-items: center; /*alinhamento no meio*/
+}
+
+#img{
+    display: flex;
+    align-items: flex-start;
+} 
+
+#gif1 {
+    width: 650px;
+    padding: 9%;
+}
+
+#roxinho {
+    width: 670px;
+    padding: 20%;
+    padding-top: 10%;
+    border-radius: 100%;
+}
+
+.container{
+    height: 200px; /* Define a altura desejada */
+    overflow: hidden; /* Oculta a parte do GIF que excede a altura */
+    position: relative;
+}
+
+.gif{
+    position: absolute;
+            top: 0; /* Ajusta a posição do GIF dentro do contêiner */
+            left: 0;
+            width: auto; /* Ajusta conforme necessário */
+            height: auto; /* Ajusta conforme necessário */
+}
+
+#inscrevase {
+    width: 200px;
+    padding-inline-start: 30%;
+    border-radius: 20%;
+}
+
+#comunidade {
+    width: 600px;
+    align-items: center;
+    padding: 15%;
+    padding-top: 0%;
+    border-radius: 100%;
+}
+
+/*Estilo do título*/
+#title{
+    flex-direction: column;
+    line-height: 8px; /*espaçamento entre as linhas*/
+}
+
+li{
+    display: inline-block; /*coloca as linha do menu em linha*/
+    margin: 9px; 
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(141,63,121,255);
+    transition: 0.3s all;
+}
+
+#local-btn{
+    border: 2px solid rgb(141,63,121,255);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#local-btn:hover{
+    background-color: rgb(141,63,121,255);
+    color: white;
+}
+
+#local-btn-animado{
+    background-color: rgb(141,63,121,255);
+    border: 2px solid rgb(141,63,121,255);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#local-btn-animado:hover{
+    background-color: rgb(34, 34, 34);
+    border: 2px solid rgb(141,63,121,255);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+h1{
+    font-weight:200; /*AFINAR A FONTE*/
+    font-family: poppinsregular;  
+} 
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+    text-align: center;
+}
+
+span{
+    color: rgb(141,63,121,255);
+}
+
+p{
+    line-height: 20px;
+    max-width: 570px;
+    font-family: poppinslight;
+    text-align: justify;
+}
+
+img{
+    width: 620px;
+}
+
+#logo_ms{
+    width: 75px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(141,63,121,255);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
